@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.card {
+  width: 31%;
+  background-color: #12121e;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 8px 8px 24px 0px rgb(24 25 35);
+}
+.card_content {
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #171726;
+}
+.card_prospect {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.card_prospect--Child {
+  margin: 6px 0;
+  padding: 0;
+  color: #ffffff47;
+}
+.card_prospect div {
+  width: 100%;
+}
+
+.card_prospect p {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.card_prospect span {
+  color: #b1b0e7;
+}
+.card_prospect-department {
+  min-width: 160px;
+  text-align: center;
+  font-size: 14px;
+}
+.card_prospect-blank {
+  min-width: 121px;
+  color: #1e1e2aa1;
+}
+.card_prospect-button {
+  background-color: #3c3ec1;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 91px;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.card_prospect-button:hover {
+  background-color: #1b1d64;
+}
+
+.card_prospect-button--Secondary {
+  background-color: #d534c9;
+}
+
+.card_prospect-button--Secondary:hover {
+  background-color: #a12898;
+}
+
+.card_prospect-button--Tertiary {
+  background-color: #00b379;
+}
+
+.card_prospect-button--Tertiary:hover {
+  background-color: #097f59;
+}

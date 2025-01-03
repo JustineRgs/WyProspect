@@ -1,0 +1,23 @@
+CREATE TABLE partners(
+id_partner INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+name VARCHAR(255) NOT NULL,
+comment LONGTEXT,
+address VARCHAR(255) NOT NULL,
+wytest INT DEFAULT 0
+);
+
+CREATE TABLE audios(
+id_audio INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+name VARCHAR(255) NOT NULL,
+comment LONGTEXT,
+address VARCHAR(255) NOT NULL,
+wytest INT DEFAULT 0
+);
+
+CREATE TABLE synergy(
+id_partner INT,
+id_audio INT,
+PRIMARY KEY(id_partner, id_audio),
+FOREIGN KEY(id_partner) REFERENCES partners(id_partner),
+FOREIGN KEY(id_audio) REFERENCES audios(id_audio)
+);
